@@ -1,28 +1,10 @@
-#include "linkedList.h"
-
-
-
-/*int main(){
-    initFreeList();
-    listCount=-1;
-    print();
-    newList();
-    insertIntoList(0,5);
-    print();
-    popFreeList();
-    insertIntoList(0, 1);
-    print();
-    insertIntoList(0,3);
-    print();
-    insertIntoList(0,9);
-    print();
-
-}*/
+//__________main.c____________
+#include "defrag.h"
 
 int main(){
     initFreeList();
     listCount=-1;
-    int input;
+    int input, count;
     do{
         printf("\n****************\nSelect an option:"
             "\n1. Create a new list"
@@ -57,13 +39,13 @@ int main(){
                 deleteFromList(listNumber, value);
                 break;
             case 4:
-                int count = countElementsAll();
+                count = countElementsAll();
                 printf("\n Total elements are %d.", count);
                 break;
             case 5:
                 printf("\nEnter the list number:");
                 scanf("%d",&listNumber);
-                int count = countElementsList(listNumber);
+                count = countElementsList(listNumber);
                 printf("\n Total elements in list %d are %d.", listNumber, count);
                 break;
             case 6:
@@ -73,6 +55,7 @@ int main(){
                 displayFreeList();
                 break;
             case 8:
+                defrag();
                 break;
             case 0:
                 break;

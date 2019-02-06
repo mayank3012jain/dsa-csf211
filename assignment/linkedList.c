@@ -77,8 +77,7 @@ void deleteFromList(int listNumber, int key){
     LinkedLists[listNumber].length--;
     if (LinkedLists[listNumber].length == 0){
         LinkedLists[listNumber].head = Null;
-    }
-    if (memory[i + PREV] == Null){
+    }else if (memory[i + PREV] == Null){
         memory[memory[i + NEXT] + PREV] = Null;
         LinkedLists[listNumber].head = memory[i + NEXT];
     }else if (memory[i + NEXT] == Null){
