@@ -2,6 +2,7 @@
 #include<stdlib.h>
 #include "stack.h"
 
+
 Stack newStack(int size){
 	Stack st;
 	st.top = -1;
@@ -13,10 +14,12 @@ Stack newStack(int size){
 Stack push(Stack st, stEle x){
 	if (st.top == st.size-1){
 		printf("Stack full");
+		exit(1);
 		return st;
 	}
 	st.top++;
 	st.array[st.top] = x;
+	//if (st.top>_max) _max = st.top;
 	return st;
 }
 

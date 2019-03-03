@@ -2,6 +2,8 @@ typedef struct{
 	int lo,hi;
 }stEle;
 
+//extern int _max =0;
+
 typedef struct{
 	int top, size;
 	stEle* array;

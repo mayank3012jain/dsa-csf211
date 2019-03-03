@@ -1,13 +1,6 @@
-#include "stack.h"
-typedef struct{
-	char name[10];
-	int empID;
-}employee;
+#include"util.h"
 
-#define index int
-#define Element employee
-Element* readFile(char fileName[]);
 Element* quickSortIterative(Element* ls, int lo, int hi, int min);
-index pivot(Element* array, index lo, index high);
-index partition(Element* array, index lo, index hi, index pivot);
-int compEmp(Element a, Element b);
+Index pivot(Element* array, Index lo, Index high);
+Index partition(Element* array, Index lo, Index hi, Index pivot);
+Element* mixSort(Element* ls, int lo, int hi, int min);
