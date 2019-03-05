@@ -78,7 +78,7 @@ Element* quickSortIterative(Element* ls, int lo, int hi, int min){
 			// 	printf("\n%d %d %d", max, lo, hi);
 			// 	//if (hi - lo < 2)	printf("\n %d %d", ls[lo].empID, ls[hi].empID);
 			// }
-			// lo = p;
+			lo = p;
 		}
 		//ls = insertionSort(ls, lo, hi);
 	}
