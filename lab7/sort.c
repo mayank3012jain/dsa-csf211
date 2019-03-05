@@ -73,7 +73,7 @@ Element* quickSortIterative(Element* ls, int lo, int hi, int min){
 			Index p = pivot(ls, lo, hi);
 			p = partition(ls, lo,hi, p);
 			st = push(st, newStEle(lo,p-1));
-			if (st.top > max)
+			// if (st.top > max)
 			// {max = st.top; 
 			// 	printf("\n%d %d %d", max, lo, hi);
 			// 	//if (hi - lo < 2)	printf("\n %d %d", ls[lo].empID, ls[hi].empID);
